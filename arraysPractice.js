@@ -1,132 +1,297 @@
 //Once you complete a problem, open up Chrome and check the answer in the console.
 
+Problem #1
 
 var arr = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the argument and  returns the first item the given array.
 
-  //Code Here
+  //My answer
+
+var first = function() {
+    for (i = 0; i < arr.length; i++) {
+      return arr[0];
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
+
+
+
 
 
 //Next problem
 
-
+Problem #2
 
 var arr = [40,50,60];
 //Create a function named 'last' that is given 'arr' as the argument and returns the last item the given array.
 
+  //My answer
 
-  //Code Here
+var last = function() {
+  for (i = 0; i < arr.length; i++) {
+    return arr[arr.length - 1];
+  }
+}
+
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
+
 
 
 //Next Problem
 
+Problem #3
 
 var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
-//Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
+//Create a function named 'looper' that is given family as it's only argument, loops through the given array,
+//and alerts every item in the array.
 
-  //Code Here
+  //My answer
+
+var looper = function() {
+  for (i = 0; i < family.length; i++) {
+    alert(family[i]);
+  }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
 
 
 //Next problem
 
-
+Problem #4
 
 var letters = ['A', 'B', 'C', 'D', 'E'];
-//Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
+//Write a function called reversedLooper that is given letters as it's only argument and loops 
+//through the given array backwards alerting every item in the array starting at the end.
 
-  //Code Here
+  //My answer
+
+var reversedLooper = function() {
+  letters.reverse()
+    for (i = 0; i < letters.length; i++) {
+      alert(letters[i]);    //<--- this is making the last letter (E) alert first, but then the 
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
+
 
 
 //Next Problem
 
+Problem #5
 
 var nums = [1,2,3,6,22,98,45,23,22,12];
-//Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
+//Write a function named evenFinder that is given nums as it's only argument and removes all values 
+//that aren't even from the given array.
 
-  //Code Here
+  //My answer
+
+var evens = [];
+var evenFinder = function() {
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 === 0) {
+      evens.push(nums[i]);
+    }  
+  }
+  alert(evens);
+}
+
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
+
+
+
+
+
+
+
 
 
 //Next problem
 
+Problem #6
 
 var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 var evens = [];
-var odds = []
+var odds = [];
 //Write a function called divider that is given three arguments, nums, evens, and odds.
-//Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
+//Have divider return an Array with the first item in the array being the evens array (all the even 
+//values from nums) and the second item in the Array being the odds array(all the odd values from nums).
+
+  //My answer
+
+var divider = function() {
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 ===0) {
+      evens.push(nums[i]);
+    }
+    else {
+      odds.push(nums[i]);
+    }
+  }
+}
+
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
 
 
 
-  //Code Here
+
+
+
+
 
 
 //Next Problem
 
+Problem #7
 
 var getRandomArbitrary = function() {
   return Math.floor(Math.random() * (30 - 0) + 0);
 }
 var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
-//Above your given a function that will return a random number between 0 and 30, and an array full or numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
+//Above your given a function that will return a random number between 0 and 30, and an array full or 
+//numbers. Your job is to write a function named finder that will get a random number, then loop 
+//through the array to see if that random number is in the array. If it is, return true, if it's 
+//not, return false
 
-  //Code Here
+  //Did not have time to make an answer
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
+
 
 
 //Next problem
 
-
+Problem #8
 
 var str = 'this is my sentence';
-//Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
+//Write a function called reverse that takes is given str as it's only argument and returns that 
+//string after it's been reversed
 
-  //Code Here
+  //Did not have time to make an answer
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
 
 
 //Next Problem
 
+Problem #9
 
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 /*
   Here we're going to write a function that mimics going shopping and checking things off of our grocery list,
-  and adding new items to our list. Write a function called removeItem that is given two arguments, the first is myGroceryList, and the
-  second is an item to remove from myGroceryList. If the second argument (or the item to add or remove) matches an item in myGroceryList,
+  and adding new items to our list. Write a function called removeItem that is given two arguments,
+  // the first is myGroceryList, and the
+  second is an item to remove from myGroceryList. If the second argument (or the item to add or remove) 
+  //matches an item in myGroceryList,
   remove that item from the your grocery list and return the new, updated grocery list. Once you do that,
   write another function called addItem that is given two arguments, the first is myGroceryList
   and the second is an item to add to your grocery list. In addItem add the item you passed in to
   myGroceryList then return the new, updated grocery list.
 */
 
-  //Code Here
+  //Did not have time to make an answer
 
 //removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
 
 
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
+
+
 //Next Problem
 
+Problem #10
+
+//Write a function called maker that creates an array, fills that array with numbers from 1 to 215, 
+//then returns the array.
+
+  //Did not have time to make an answer
 
 
-//Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
+------------------------------------------------------------------------------------------------------------
 
-  //Code Here
+  //instructor answer
+
+
+
 
 
 
 //Next Problem
 
+Problem #11
 
 var numbers = [5, '9', 16, 19, '25', '34', 48];
 //Write a function called addTen that is given 'numbers' as it's only argument and returns a new
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
-  //Code Here
+  //Did not have time to make an answer
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
+
+
+
 
 
 
 //Next Problem
 
-
+Problem #12
 
 var num1 = Math.floor(Math.random() * (30 - 0) + 0);
 var num2 = Math.floor(Math.random() * (30 - 0) + 0);
@@ -141,7 +306,15 @@ for(var i = 0; i < num2; i++){
 //Above is some code that adds a random number to both arr1 and arr2.
 //Write a function that is given arr1 and arr2 is it's only arguments. Return the array which is longest.
 
-  //Code Here
+  //Did not have time to make an answer
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
@@ -149,4 +322,15 @@ for(var i = 0; i < num2; i++){
   'both' should return a new array full of numbers that are found in both arr1 and arr2.
 */
 
-  //Code Here
+  //Did not have time to make an answer
+
+------------------------------------------------------------------------------------------------------------
+
+  //instructor answer
+
+
+
+
+
+
+
